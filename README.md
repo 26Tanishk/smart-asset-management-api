@@ -1,5 +1,13 @@
 # Smart Asset Management API
+
 Backend REST API for managing enterprise assets and maintenance workflows using FastAPI and SQLAlchemy.
+
+---
+
+## Live API
+
+Swagger Docs:  
+https://smart-asset-management-api.onrender.com/docs
 
 ---
 
@@ -42,7 +50,6 @@ Routes → Services → CRUD → SQLAlchemy Models → Database
 - SQLAlchemy models manage relational data
 - Pydantic schemas handle request/response validation
 
-
 ---
 
 ## Project Structure
@@ -64,9 +71,7 @@ app/
 │   └── asset_service.py
 ```
 
-
 ---
-
 
 ## Setup Instructions
 
@@ -114,7 +119,14 @@ uvicorn app.main:app --reload
 http://127.0.0.1:8000/docs
 ```
 
+---
 
+## Deployment
+
+Deployed on Render using FastAPI, Uvicorn, and SQLite.
+
+Production URL:  
+https://smart-asset-management-api.onrender.com/docs
 
 ---
 
@@ -130,7 +142,6 @@ http://127.0.0.1:8000/docs
 | DELETE | /assets/{id} | Delete asset |
 | POST | /assets/{id}/maintenance | Create maintenance log |
 
-
 ---
 
 ## Workflow Rules
@@ -141,12 +152,50 @@ http://127.0.0.1:8000/docs
 - Invalid lifecycle transitions are blocked
 - Maintenance due dates cannot be earlier than purchase dates
 
-
-
 ---
 
 ## Swagger Screenshots
-Screenshots demonstrating API workflows and validation behavior.
+
+## Swagger Overview
+
+<img width="902" height="961" alt="Swagger Overview" src="https://github.com/user-attachments/assets/ef0ac78f-05d2-4793-9479-229d71eb6faf" />
+
+---
+
+## Maintenance Workflow
+
+Demonstration of maintenance workflow execution with real operational data.
+
+### Create Maintenance Request
+
+<img width="1315" height="386" alt="Maintenance Request" src="https://github.com/user-attachments/assets/c8a5e2a2-427e-4719-aada-e007bd4ca51c" />
+
+### Maintenance Workflow Execution
+
+<img width="1318" height="302" alt="Maintenance Execution" src="https://github.com/user-attachments/assets/d5f9f60a-b030-4ed1-8de8-6551afb8e1e5" />
+
+### Successful Maintenance Response
+
+<img width="1315" height="199" alt="Maintenance Response" src="https://github.com/user-attachments/assets/1d1f7f90-3ffa-4bf5-94e4-6ed0147460dd" />
+
+---
+
+## Filtering + Sorting + Pagination
+
+Example query filtering active laptop assets with sorting and paginated results.
+
+### Query Parameters
+
+<img width="395" height="499" alt="Filtering Parameters" src="https://github.com/user-attachments/assets/0ea0bf96-838f-48f2-bcad-ff34558c7ebe" />
+
+### Query Execution
+
+<img width="1185" height="149" alt="Filtering Execution" src="https://github.com/user-attachments/assets/cd24a3c1-7d50-4a78-9ca7-002d09b6ed4a" />
+
+### Paginated Response
+
+<img width="1187" height="215" alt="Filtering Response" src="https://github.com/user-attachments/assets/32219605-2a28-4ec8-a3bf-02d716987f57" />
+
 ---
 
 ## Future Improvements
@@ -154,6 +203,5 @@ Screenshots demonstrating API workflows and validation behavior.
 - JWT authentication
 - PostgreSQL integration
 - Automated testing
-
 
 ---
