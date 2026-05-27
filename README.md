@@ -156,13 +156,13 @@ https://smart-asset-management-api.onrender.com/docs
 
 ## Swagger Screenshots
 
-## Swagger Overview
+### Swagger Overview
 
 <img width="902" height="961" alt="Swagger Overview" src="https://github.com/user-attachments/assets/ef0ac78f-05d2-4793-9479-229d71eb6faf" />
 
 ---
 
-## Maintenance Workflow
+### Maintenance Workflow
 
 Demonstration of maintenance workflow execution with real operational data.
 
@@ -180,7 +180,7 @@ Demonstration of maintenance workflow execution with real operational data.
 
 ---
 
-## Filtering + Sorting + Pagination
+### Filtering + Sorting + Pagination
 
 Example query filtering active laptop assets with sorting and paginated results.
 
