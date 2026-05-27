@@ -31,7 +31,7 @@ Backend REST API for managing enterprise assets and maintenance workflows using 
 The project follows a layered backend architecture:
 
 ```text
-Routes → Services → CRUD → Database
+Routes → Services → CRUD → SQLAlchemy Models → Database
 ```
 
 ### Layer Responsibilities
